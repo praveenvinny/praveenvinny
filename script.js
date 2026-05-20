@@ -25,6 +25,22 @@
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 
+  // ----- dynamic duration since YYYY-MM (e.g. for volunteering tenure) -----
+  document.querySelectorAll('[data-duration-since]').forEach((el) => {
+    const m = el.dataset.durationSince.match(/^(\d{4})-(\d{1,2})$/);
+    if (!m) return;
+    const start = new Date(+m[1], +m[2] - 1, 1);
+    const now = new Date();
+    let months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+    if (months < 0) return;
+    const yrs = Math.floor(months / 12);
+    const mos = months % 12;
+    const parts = [];
+    if (yrs) parts.push(`${yrs} yr${yrs === 1 ? '' : 's'}`);
+    if (mos) parts.push(`${mos} mo${mos === 1 ? '' : 's'}`);
+    el.textContent = parts.join(' ') || 'just started';
+  });
+
   // ----- mobile nav toggle -----
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.nav');
