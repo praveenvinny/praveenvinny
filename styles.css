@@ -270,7 +270,56 @@ a:hover { color: var(--accent); text-decoration: underline; }
 .hobby:hover { transform: translateY(-2px); border-color: var(--accent); }
 .hobby-icon { font-size: 22px; margin-bottom: 8px; }
 .hobby h3 { margin: 0 0 4px; font-size: 15px; color: var(--text); font-family: var(--mono); }
-.hobby p { margin: 0; color: var(--text-dim); font-size: 14px; }
+.hobby p { margin: 0; color: var(--text-dim); font-size: 14px; line-height: 1.65; }
+.hobby p strong { color: var(--text); font-weight: 600; }
+.hobby p em { color: var(--text); font-style: italic; }
+
+/* Featured hobby (travel) -------------------------------------------------- */
+.hobby-featured {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 28px;
+  margin-bottom: 18px;
+  transition: border-color .18s ease;
+}
+.hobby-featured:hover { border-color: var(--accent); }
+.fh-head {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.fh-head .hobby-icon { margin: 0; font-size: 26px; }
+.fh-head h3 {
+  margin: 0; font-size: 19px; color: var(--text);
+  font-family: var(--mono);
+}
+.fh-badge {
+  font-family: var(--mono); font-size: 11px;
+  background: rgba(126,231,135,.12); color: var(--accent);
+  padding: 4px 10px; border-radius: 999px;
+  letter-spacing: .04em;
+}
+.hobby-featured p {
+  margin: 0 0 12px;
+  color: var(--text-dim);
+  font-size: 14.5px;
+  line-height: 1.75;
+}
+.hobby-featured p:last-of-type { margin-bottom: 0; }
+.hobby-featured p strong { color: var(--text); font-weight: 600; }
+.travel-chips {
+  list-style: none; padding: 0;
+  margin: 16px 0 0;
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.travel-chips li {
+  font-family: var(--mono); font-size: 11.5px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 4px 9px; border-radius: 6px;
+}
 
 /* CONTACT ----------------------------------------------------------------- */
 .contact-wrap { max-width: 760px; }
@@ -318,6 +367,8 @@ a:hover { color: var(--accent); text-decoration: underline; }
   .terminal-body { padding: 18px 16px 22px; font-size: 13.5px; }
   .terminal-body .output { font-size: 13px; padding-left: 14px; }
   .hobby-grid, .skill-grid { grid-template-columns: 1fr; }
+  .hobby-featured { padding: 20px 18px; }
+  .fh-head h3 { font-size: 17px; }
   .section { padding: 60px 0; }
 }
 
@@ -325,4 +376,5 @@ a:hover { color: var(--accent); text-decoration: underline; }
   html { scroll-behavior: auto; }
   .brand-cursor, .cursor-blink { animation: none; }
   .project-card:hover, .hobby:hover { transform: none; }
+  .hobby-featured { transition: none; }
 }
