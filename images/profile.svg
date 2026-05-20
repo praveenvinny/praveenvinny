@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Praveen Vinny placeholder avatar">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <g font-family="JetBrains Mono, ui-monospace, monospace" font-weight="700" text-anchor="middle">
+    <text x="200" y="160" font-size="36" fill="#6e7681">$ whoami</text>
+    <text x="200" y="260" font-size="96" fill="#7ee787">PV</text>
+    <text x="200" y="320" font-size="22" fill="#8b949e" font-weight="500">praveen.vinny</text>
+  </g>
+</svg>
