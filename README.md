@@ -1,6 +1,6 @@
 ### `~/praveen.vinny $ whoami`
 
-Product & engineering at [Accelo](https://www.accelo.com). I build software that helps service businesses run themselves better. Based in Australia.
+I work on the Product & Engineering at [Accelo](https://www.accelo.com) building software that helps service businesses run more efficiently. I am based in Wollongong, Australia. I migrated to Australia from India in 2016.
 
 **🌐 Site:** [praveenvinny.github.io/praveenvinny](https://praveenvinny.github.io/praveenvinny/)
 **💼 LinkedIn:** [linkedin.com/in/praveenvinny](https://www.linkedin.com/in/praveenvinny)
