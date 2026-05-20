@@ -4,7 +4,7 @@ Product & engineering at [Accelo](https://www.accelo.com). I build software that
 
 **🌐 Site:** [praveenvinny.github.io/praveenvinny](https://praveenvinny.github.io/praveenvinny/)
 **💼 LinkedIn:** [linkedin.com/in/praveenvinny](https://www.linkedin.com/in/praveenvinny)
-**✉️  Email:** praveen.vinny@accelo.com
+**✉️  Email:** praveen.vinny@gmail.com
 
 ---
 
